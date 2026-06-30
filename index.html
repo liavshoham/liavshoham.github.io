@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ליאב שוהם | הקול החדש של המזרחית המודרנית</title>
+  <meta name="description" content="האתר הרשמי של ליאב שוהם — הקול החדש של המזרחית המודרנית. האזינו לסינגל החדש, צפו בקליפים, ועקבו אחרי הקריירה.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="music.musician">
+  <meta property="og:title" content="ליאב שוהם | הקול החדש של המזרחית המודרנית">
+  <meta property="og:description" content="האזינו לסינגל החדש של ליאב שוהם וצפו בקליפים הרשמיים.">
+  <meta property="og:image" content="images/hero-liav.jpg">
+  <meta property="og:locale" content="he_IL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ליאב שוהם">
+  <meta name="twitter:description" content="הקול החדש של המזרחית המודרנית">
+  <meta name="twitter:image" content="images/hero-liav.jpg">
+
+  <link rel="icon" href="icons/favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#090909">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "ליאב שוהם",
+    "genre": "Mizrahi",
+    "url": "https://liavshoham.github.io",
+    "sameAs": [
+      "https://www.youtube.com/@liavshoham",
+      "https://www.instagram.com/liavshoham",
+      "https://open.spotify.com/artist/liavshoham",
+      "https://music.apple.com/artist/liavshoham",
+      "https://www.tiktok.com/@liavshoham"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="site-nav">
+    <a href="#top" class="nav__logo">ליאב שוהם</a>
+    <div class="nav__links">
+      <a href="#latest">השיר החדש</a>
+      <a href="#singles">כל השירים</a>
+      <a href="#about">אודות</a>
+      <a href="#social">רשתות</a>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" id="top">
+    <div class="hero__bg"></div>
+    <div class="hero__veil"></div>
+    <div class="hero__content">
+      <p class="hero__kicker eyebrow">אמן מוקלט</p>
+      <h1 class="hero__title">ליאב שוהם</h1>
+      <p class="hero__subtitle">הקול החדש של המזרחית המודרנית</p>
+      <div class="hero__cta">
+        <a href="#latest" class="btn btn--gold">▶ האזינו עכשיו</a>
+      </div>
+    </div>
+    <span class="hero__scroll" aria-hidden="true"></span>
+  </header>
+
+  <!-- ===================== LATEST RELEASE ===================== -->
+  <section class="latest" id="latest">
+    <div class="section">
+      <div class="section__head reveal">
+        <p class="eyebrow">השיר החדש</p>
+        <h2 class="section__title">הלאנצמנט האחרון</h2>
+      </div>
+
+      <div class="latest__grid">
+        <div class="latest__cover reveal">
+          <span class="latest__badge">חדש</span>
+          <img id="latest-cover" src="" alt="">
+        </div>
+
+        <div class="latest__info reveal">
+          <p class="eyebrow" id="latest-date"></p>
+          <h3 class="latest__title" id="latest-title"></h3>
+
+          <div class="latest__player" id="latest-player"></div>
+
+          <div class="latest__actions">
+            <a id="latest-watch" class="btn btn--gold" href="#" target="_blank" rel="noopener">▶ צפו ביוטיוב</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SINGLES GRID ===================== -->
+  <section class="section" id="singles">
+    <div class="section__head reveal">
+      <p class="eyebrow">קטלוג</p>
+      <h2 class="section__title">כל השירים</h2>
+    </div>
+
+    <div class="songs__grid" id="songs-grid"></div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="about__grid">
+      <div class="about__photo reveal">
+        <img src="images/liav-id.jpg" alt="ליאב שוהם">
+      </div>
+
+      <div class="about__text reveal">
+        <p class="eyebrow">אודות האמן</p>
+        <h2 class="section__title" style="margin-bottom: 1.4rem;">ליאב שוהם</h2>
+        <p>ליאב שוהם הוא קול חדש בסצנת המזרחית המודרנית, שמשלב מלודיות ים-תיכוניות עם הפקה עכשווית ואנרגיה רגשית מיוחדת. כל שיר מספר פרק נוסף בסיפור אחד גדול.</p>
+        <p>מהרחובות המוארים של תל אביב ועד הופעות חיות, ליאב בונה קהל שמתחבר לכל מילה ולכל מנגינה.</p>
+
+        <div class="about__stats">
+          <div>
+            <div class="about__stat-num" id="stat-songs">—</div>
+            <div class="about__stat-label">סינגלים</div>
+          </div>
+          <div>
+            <div class="about__stat-num">2025</div>
+            <div class="about__stat-label">תחילת הדרך</div>
+          </div>
+          <div>
+            <div class="about__stat-num">TLV</div>
+            <div class="about__stat-label">בסיס</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY / INSTAGRAM ===================== -->
+  <section class="gallery">
+    <div class="section">
+      <div class="section__head reveal">
+        <p class="eyebrow">אינסטגרם</p>
+        <h2 class="section__title">רגעים</h2>
+      </div>
+
+      <div class="gallery__row">
+        <div class="gallery__item reveal"><img src="images/liav-romantic.jpg" alt="ליאב שוהם"></div>
+        <div class="gallery__item reveal"><img src="images/liav-dramatic.jpg" alt="ליאב שוהם"></div>
+        <div class="gallery__item reveal"><img src="images/telaviv.jpg" alt="תל אביב"></div>
+        <div class="gallery__item reveal"><img src="images/liav-id.jpg" alt="ליאב שוהם"></div>
+      </div>
+
+      <div class="gallery__cta">
+        <a href="#" class="btn btn--ghost" target="_blank" rel="noopener">עקבו באינסטגרם</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOCIAL ===================== -->
+  <section class="section" id="social">
+    <div class="section__head reveal">
+      <p class="eyebrow">עקבו</p>
+      <h2 class="section__title">רשתות חברתיות</h2>
+    </div>
+
+    <div class="social__grid">
+      <a class="social-card reveal" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5v-7l6.3 3.5Z"/></svg>
+        <span>YouTube</span>
+      </a>
+      <a class="social-card reveal" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 3.3.15 4.8 1.66 4.96 4.96.06 1.3.07 1.6.07 4.77 0 3.17 0 3.5-.07 4.77-.16 3.3-1.65 4.81-4.96 4.96-1.3.06-1.6.07-4.9.07-3.2 0-3.6 0-4.9-.07-3.32-.15-4.8-1.67-4.96-4.96C2.07 15.5 2.06 15.2 2.06 12s0-3.5.07-4.77c.15-3.3 1.65-4.81 4.96-4.96C8.4 2.2 8.7 2.2 12 2.2Zm0 1.8c-3.14 0-3.5 0-4.74.07-2.27.1-3.32 1.18-3.42 3.42C3.78 8.5 3.78 8.86 3.78 12s0 3.5.06 4.74c.1 2.24 1.15 3.32 3.42 3.42 1.24.06 1.6.06 4.74.06s3.5 0 4.74-.06c2.26-.1 3.32-1.16 3.42-3.42.06-1.24.06-1.6.06-4.74s0-3.5-.06-4.74c-.1-2.24-1.16-3.32-3.42-3.42C15.5 4 15.14 4 12 4Zm0 3.6a4.4 4.4 0 1 1 0 8.8 4.4 4.4 0 0 1 0-8.8Zm0 1.8a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2Zm5.6-2a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+        <span>Instagram</span>
+      </a>
+      <a class="social-card reveal" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 1.5c5.8 0 10.5 4.7 10.5 10.5S17.8 22.5 12 22.5 1.5 17.8 1.5 12 6.2 1.5 12 1.5Zm4.4 7.2c-.6.04-2 .68-3.4 1.6-1.6 1-3 2.2-3.7 3.3a.9.9 0 0 0 .2 1.2c.3.2.6.2.9 0 .6-.4 1.6-1.3 2.6-2.3.2.7.5 1.5 1 2.2.3.4.8.5 1.2.2.4-.3.5-.8.2-1.2-.4-.6-.7-1.4-.9-2.2.5-.5 1-1 1.3-1.4.5-.6.4-1.2-.4-1.4Z"/></svg>
+        <span>Spotify</span>
+      </a>
+      <a class="social-card reveal" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M16.5 2c.1 1.4-.4 2.7-1.3 3.7-.9 1-2.2 1.8-3.5 1.7-.1-1.4.5-2.8 1.3-3.7.9-1 2.4-1.7 3.5-1.7Zm3.4 16.4c-.5 1.1-.8 1.6-1.4 2.6-.9 1.4-2.2 3.1-3.8 3.1-1.4 0-1.8-.9-3.7-.9-1.9 0-2.4.9-3.7.9-1.6 0-2.8-1.6-3.7-3-2.5-3.8-2.8-8.3-1.2-10.7 1.1-1.7 2.9-2.7 4.6-2.7 1.7 0 2.8 1 4.2 1 1.4 0 2.2-1 4.2-1 1.5 0 3.1.8 4.2 2.2-3.7 2-3.1 7.2.3 8.5Z"/></svg>
+        <span>Apple Music</span>
+      </a>
+      <a class="social-card reveal" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M16.6 1.5h-3.3v14.6a3 3 0 1 1-2.5-2.95v-3.3a6.3 6.3 0 1 0 5.8 6.27V8.8a8 8 0 0 0 4.6 1.45V7a4.8 4.8 0 0 1-4.6-4.7Z"/></svg>
+        <span>TikTok</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__logo">ליאב שוהם</div>
+    <div class="footer__meta">© <span id="year"></span> ליאב שוהם — כל הזכויות שמורות</div>
+  </footer>
+
+  <script src="js/songs.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("stat-songs").textContent = (typeof songs !== "undefined") ? songs.length : "—";
+  </script>
+</body>
+</html>
