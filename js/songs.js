@@ -7,17 +7,17 @@
 const songs = [
   {
     title: "הלילה שלנו",
-    youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    youtube: "https://www.youtube.com/watch?v=jRiyKhwn7tk",
     date: "2026"
   },
   {
     title: "צל שלך",
-    youtube: "https://www.youtube.com/watch?v=kJQP7kiw5Fk",
+    youtube: "https://www.youtube.com/watch?v=fhXkhsc5Hnw",
     date: "2026"
   },
   {
     title: "כולם מדברים",
-    youtube: "https://www.youtube.com/watch?v=OPf0YbXqDm0",
-    date: "2025"
+    youtube: "https://www.youtube.com/watch?v=2DAnvNjPOkY",
+    date: "2026"
   }
 ];
